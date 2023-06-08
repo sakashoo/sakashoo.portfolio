@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>works3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Noto+Sans+JP&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/作品3.css">
+  </head>
+  <body>
+    <div id="splash">
+        <div id="splash_text"></div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+      <!--自作のJS-->
+      <script src="./assets/main.js"></script>
+      <div id="wrapper">
+        
+        <div id="hamburger">
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+  <!--△△ハンバーガーメニュー△△-->
+  
+  
+  <!--▽▽ハンバーガーメニューのリスト▽▽-->
+        <nav class="sm">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+       </nav>
+  <!--△△ハンバーガーメニューのリスト△△-->
+  
+  
+  <!--▽▽ヘッダーリスト▽▽-->
+        <nav class="pc">  <!--pcクラスを追記-->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+  <!--△△ヘッダーリスト△△-->
+
+  <script src="assets/jquery-3.7.0.min.js"></script>
+  <script>
+    $('#hamburger').on('click', function(){
+    $('.icon').toggleClass('close');
+    $('.sm').slideToggle();
+    });
+  </script>
+          <header>
+              <h1>お茶屋サイトを作成しました</h1>
+              
+          </header>
+
+          <main role="main">
+              <section id="first">
+                  <div class="inner">
+                      <h2>架空のお茶屋サイト</h2>
+                      <p>授業の課題で作成しました。</p>
+                      <p>先生のコーディングを見つつ<br>作成しました</p>
+                  </div>
+              </section>
+
+              <section id="second">
+                  <div class="inner">
+                      <h2>サイトの全体</h2>
+                      <img src="./assets/img/teatea.png" alt="画像">
+                      <img src="./assets/img/greee.tea2.2.png" alt="画像">
+                      <img src="./assets/img/green.tea2.3.png" alt="画像">
+                      <div class="switch">
+                        <body>
+                         <a href="works.html" class="btn">一覧に戻る</a>
+                        </body>
+                      </div>
+                  </div>
+              </section>
+
+          </main>
+
+          <footer>
+              <div class="inner">
+                  <small class="copyright">&copy; 2023 shotapolio</small>
+              </div>
+          </footer>
+      </div>
+  </body>
+</html>
+
+
+
