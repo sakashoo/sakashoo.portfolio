@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&family=Noto+Sans+JP&family=Nunito&family=Pacifico&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/about.css">
+  </head>
+  <body>
+    <div id="splash">
+      <div id="splash_text"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+      <!--自作のJS-->
+      <script src="./assets/main.js"></script>
+
+      <div id="wrapper">
+        
+        <div id="hamburger">
+          <div class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </div>
+<!--△△ハンバーガーメニュー△△-->
+
+
+<!--▽▽ハンバーガーメニューのリスト▽▽-->
+      <nav class="sm">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="contact.html">Contact</a></li>
+       </ul>
+     </nav>
+<!--△△ハンバーガーメニューのリスト△△-->
+
+
+<!--▽▽ヘッダーリスト▽▽-->
+      <nav class="pc">  <!--pcクラスを追記-->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+<!--△△ヘッダーリスト△△-->
+
+<script src="./assets/jquery-3.7.0.min.js"></script>
+<script>
+  $('#hamburger').on('click', function(){
+  $('.icon').toggleClass('close');
+  $('.sm').slideToggle();
+  });
+</script>
+        
+         
+          <main role="main">
+            <h1>- about -</h1>
+              <section id="first"> 
+                  <div class="inner">
+                    <h2>榊原 唱太</h2>
+                    <p>sakakibara / shota</p>
+                    <div style="margin-bottom: 30px;"></div>
+                    <p>東京テクノロジーセンター専門学校</p>
+                    <p>スーパーITエンジニア専攻、4年</p>
+                    <div style="margin-bottom: 30px;"></div>
+                    <p>目標は、最高のユーザーエクスペリエンスを実現できるような<br>
+                      webエンジニアになることです!!</p>
+                    
+                                       
+                  </div>
+              </section>
+
+              <section id="second">
+                <div class="inner">
+                    <h2>~ skills ~</h2>
+                    <h3>Coding</h3>
+                    <table>
+                        <tr>
+                            <th>HTML</th>
+                            <td>★★★★☆</td> 
+                            <td>コーディングスピードを上げれるように特訓中です。</td>
+                        </tr>
+                        <tr>
+                            <th>CSS</th>
+                            <td>★★★☆☆</td> 
+                            <td>レスポンシブデザインが苦手で目下挑戦中です。</td>
+                        </tr>
+                        <tr>
+                            <th>JavaScript</th>
+                            <td>★★☆☆☆</td> 
+                            <td>現在独学で学習中です。</td>
+                        </tr>
+                        <tr>
+                          <th>PHP</th>
+                          <td>★☆☆☆☆</td> 
+                          <td>現在学校にて学習中です。</td>
+                      </tr>
+                      <tr>
+                        <th>Java</th>
+                        <td>★☆☆☆☆</td> 
+                        <td>現在学校にて学習中です。</td>
+                    </tr>
+                    </table>
+                </div>
+              </section>
+              
+              <section id="third">
+                <div class="box12">
+                  <div style="margin-bottom: 50px;">
+                    <p>はじめまして。</p>
+                  </div>
+                  <div style="margin-bottom: 50px;">
+                    <p>このポートフォリオサイトを開いてくださり、ありがとうございます<br>
+                      榊原唱太と申します。</p>
+                  </div>
+                  <div style="margin-bottom: 50px;">
+                    <p>2001年生まれ、愛知県半田市出身、<br>現在、上京いたしまして東京で専門学生をしております。</p>
+                  </div>
+                  <div style="margin-bottom: 50px;">
+                    <p>自分を一言で表すと、とても負けず嫌いです。<br>何事にも負けたくないというのが自分の中にあります。<br>僕のこの性格は、どんなに困難な状況でも諦めず、問題解決に向けて最善の結果を追求する動機付けとなり、その結果、常に自己改善を追求し、自分のスキルと知識を磨き続けることができると考えています。<br>そして僕はこの特性を、すべての仕事や人間関係に生かすことで、最善の結果を達成し、成長し続けることを目指しています。</p>
+                  </div>
+                  <div style="margin-bottom: 50px;">
+                    <p>趣味はゲームをすることです。<br>特にPCゲームで『VALORANT』というFPSゲームをリリス当初から現在まで3年ほどプレーしています。<br>5vs5のチームゲームで、ゲーム内でコミュニカーションをとりながら戦術を考えプレーするのが面白いポイントです。<br>楽しいが故に何時間でもプレーしてしまうので良くないですね。（笑）</p>
+                  </div>
+                  <div style="margin-bottom: 50px;">
+                    <p>今の目標は最高のユーザーエクスペリエンスを実現できるようなwebエンジニアになることです。<br>そのためには、技術や知識はもちろん、コミュニケーション能力、継続的な学習が必要だと思っています。<br>そして、僕の強みでもある負けず嫌いな性格によって、自分を常に向上させ目標を達成できると考えています。</p>
+                  </div>
+
+                  
+                  
+                  
+                    
+                   
+                </div>
+              </section>
+          </main>
+
+          <footer>
+              <div class="inner">
+                  <small class="copyright">&copy; 2023 shotapolio</small>
+              </div>
+          </footer>
+      </div>
+  </body>
+</html>
+
+
+
+
