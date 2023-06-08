@@ -1,0 +1,377 @@
+@charset "UTF-8";
+@import "https://unpkg.com/ress/dist/ress.min.css";
+
+* {
+    box-sizing: border-box;
+    float: none;
+    position: static;
+}
+
+body {
+    color: #333;
+}
+
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background:#f2ebd1;
+  text-align:center;
+  color:#fff;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    z-index: 999;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 100px;
+}
+
+
+#container{
+    width:100%;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+a{
+    color: #333;
+}
+
+a:hover{
+     text-decoration: none;   
+}
+
+.inner {
+    width: 1000px;
+    margin: auto;
+}
+
+
+h3 {
+    font-size: 20px;
+    padding: .25em 0 .25em 1em;
+    border-left: 8px solid;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    color: #652a0e;
+}
+
+
+nav {
+    width: 100%;
+    height: 90px;
+    background-color: #c7b897;
+    padding-top: 40px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-width: 480px) {
+    nav {
+        height: 200px;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: end;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    font-size: 27px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #f8f5e3;
+  }
+  a:hover {
+    color: #652a0e;
+  }
+  @media screen and (max-width: 480px) {
+    a {
+        color: #f8f5e3;
+    }
+  }
+
+  
+  .sm {
+    display: none;
+  }
+  
+  
+  /**********************************　
+  以下、ハンバーガーメニューの設定　
+  ************************************/
+  
+  @media screen and (max-width: 900px) {
+  
+    .pc {
+      display: none;
+    }
+  
+    #hamburger {
+      background-color: transparent;
+      position: relative;
+      cursor: pointer;
+      margin: 0 0 0 auto;
+      height: 60px;
+      width: 60px;
+    }
+  
+    .icon span {
+      position: absolute;
+      left: 15px;
+      width: 30px;
+      height: 4px;
+      background-color: #c7b897;
+      border-radius: 8px;
+      transition: ease 0.75s;
+    }
+  
+    .icon span:nth-of-type(1) {
+      top: 16px;
+    }
+    .icon span:nth-of-type(2) {
+      top: 28px;
+    }
+    .icon span:nth-of-type(3) {
+      bottom: 16px;
+    }
+  
+    .close span:nth-of-type(1) {
+      transform: rotate(45deg);
+      top: 28px;
+    }
+  
+    .close span:nth-of-type(2) {
+      opacity: 0;
+    }
+  
+    .close span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        top: 28px;
+    }
+  
+    .sm {
+        top: 60px;
+        left: 0px;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        color: #c7b897;
+    }
+  
+    ul {
+      flex-direction: column;
+    }
+  
+    a {
+      text-align: center; 
+      border-top: solid 0.5px rgba(255, 255, 255, 0.6);
+    }
+  }
+ 
+ 
+
+main {
+    background-color: #f2ebd1;
+}
+
+main h1 {
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 60px;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    color: #652a0e;
+}
+@media screen and (max-width: 480px) {
+  main h1 {
+  padding-top: 40px;
+  }
+}
+section {
+    width: 100%;
+    padding: 80px 0;
+}
+
+
+/*=======================================
+
+         first
+
+  ===================== ================= */
+
+section#first {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    background: url("../img/my photo.jpg") left center no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+    section#first {
+        max-width: 100%;
+        background: url("../img/my photo.jpg") 
+        left center no-repeat;
+        background-size: auto 300px;
+        background-position: center;
+        background-position: top;
+    }
+}
+section#first .inner {
+    width: 500px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 480px) {
+    section#first .inner{
+        padding-top: 200px;
+    }
+}
+@media screen and (max-width: 480px) {
+  section#first h2 {
+    padding-top: 70px;
+}
+}
+section#first h2 {
+    text-align: center;
+    line-height: 1.5em;
+    color:  #652a0e;;
+    font-size: 60px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    section#first h2{
+        margin-top: 20px;
+
+    }
+}
+
+section#first p {
+    text-align: center;
+    color:  #652a0e;;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    section#first p{
+        margin: 1em ;
+        font-size: 18px;
+    }
+}
+
+section#second {
+    padding: 0;
+    background-color: #f2ebd1;
+}
+
+@media screen and (max-width: 480px) {
+    section#second {
+        max-width: 100%;
+        width: 500px;
+        margin: auto;
+        display: flex;
+       
+    }
+}
+section#second h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    color: #652a0e;
+}
+table th ,
+table td{
+    vertical-align: baseline;
+    padding: .25em .5em;
+    color: #652a0e;
+}
+
+@media screen and (max-width: 480px) {
+    table th,
+    table td {
+        padding: .1em ;
+        padding-top: 1px;
+        margin: 4em ;
+    }
+}
+table th {
+    padding-right: 1.5em;
+    text-align: right;
+}
+
+table th.vote,
+table th.opinion {
+    padding-top: .5em;vertical-align: top;
+}
+table td {
+    line-height: 3;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.box12{
+    padding: 1em 1em;
+    margin: 1em 250px;
+    color: #652a0e;
+    background: #fff8e9;
+    border-bottom: solid 6px #c7b897;
+    border-radius: 9px;
+}
+@media screen and (max-width: 480px) {
+    .box12 {
+       width: 400px;
+       text-align: center;
+       margin: auto;
+       }
+   }
+.box12 p {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    line-height: 2;
+    margin: 20px;
+}
+
+footer {
+    background: #f2ebd1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+    footer .inner {
+      width: 400px;
+      margin-left: auto;
+    }
+  }
+
+
+
+  
+ 
+
+
